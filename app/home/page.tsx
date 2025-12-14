@@ -78,10 +78,10 @@ export default function HomePage() {
             {/* Menu burger & Search */}
             <div className="flex items-center gap-2 sm:gap-4">
               <button className="p-2 hover:bg-gray-100 rounded-lg transition-colors">
-                <Menu className="w-5 h-5 sm:w-6 sm:h-6" />
+                <Menu className="w-5 h-5 sm:w-6 color-black  sm:h-6" />
               </button>
-              <div className="hidden md:flex items-center border-b border-gray-300 pb-1">
-                <Search className="w-5 h-5 text-gray-400" />
+              <div className="hidden md:flex items-center color-black border-b border-gray-300 pb-1">
+                <Search className="w-5 h-5 text-black" />
                 <input
                   type="text"
                   placeholder="SEARCH"
@@ -92,8 +92,8 @@ export default function HomePage() {
 
             {/* Logo */}
             <div className="text-center">
-              <h1 className="text-xl sm:text-2xl lg:text-3xl font-serif tracking-wider">BS FASHION</h1>
-              <p className="text-[10px] sm:text-xs tracking-widest">le meilleur de la ville</p>
+              <h1 className="text-xl sm:text-2xl lg:text-3xl text-black font-serif tracking-wider">BS FASHION</h1>
+              <p className="text-[10px] sm:text-xs text-black  tracking-widest">le meilleur de la ville</p>
             </div>
 
             {/* Icons */}
@@ -147,14 +147,14 @@ export default function HomePage() {
       {/* Section By Category */}
       <section className="bg-gray-50 py-12 sm:py-16 px-4">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif mb-8 sm:mb-12 text-left">Par catégorie</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-black  font-serif mb-8 sm:mb-12 text-left">Par catégorie</h2>
           
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {[
               { title: "Vestes", image: "/v1.jpg" },
               { title: "Sandales", image: "/l1.jpg" },
               { title: "Chaussures", image: "/s1.jpg" },
-              { title: "Super-Wax", image: "/b1.jpg" }
+              { title: "Accessoires", image: "/b1.jpg" }
             ].map((category, i) => (
               <div 
                 key={i} 
@@ -184,7 +184,7 @@ export default function HomePage() {
       <section className="bg-white py-12 sm:py-16 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8 sm:mb-12 gap-4">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif">Nouveau dans la boutique</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl text-black  lg:text-5xl font-serif">Nouveau dans la boutique</h2>
             <button className="bg-black text-white px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm font-semibold hover:bg-gray-800 transition-colors whitespace-nowrap">
               VOIR TOUT
             </button>
